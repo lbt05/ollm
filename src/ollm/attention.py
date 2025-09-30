@@ -1,6 +1,6 @@
 import torch
 import math
-from typing import Optional
+from typing_extensions import Optional
 
 def online_chunked_grouped_attention_rope_no_mask(
     q,                    # (B, Hq, Lq, D)  -- RoPE already applied to q

@@ -2,11 +2,10 @@
 
 import time, os
 from datetime import datetime
-import threading
 import numpy as np
 import torch
 from torch import nn
-from typing import Callable, Optional, Tuple, Union, Dict, Any, Iterable, List, Unpack
+from typing_extensions import  Optional, Tuple, Unpack
 from transformers import LlamaForCausalLM, Cache
 
 from .utils import _walk_to_parent, _assign_tensor_to_module, _set_meta_placeholder

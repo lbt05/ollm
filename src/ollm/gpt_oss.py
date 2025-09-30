@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from torch import nn
 import torch.nn.functional as F
-from typing import Callable, Optional, Tuple, Union, Dict, Any, Iterable, List, Unpack
-from transformers import GptOssForCausalLM, AutoTokenizer, AutoModelForCausalLM
+from typing_extensions import  Optional, Unpack
+from transformers import GptOssForCausalLM
 from .utils import _walk_to_parent, _assign_tensor_to_module, _set_meta_placeholder
 from .gds_loader import GDSWeights
 from .gpt_oss_attention import attention as flash_attention

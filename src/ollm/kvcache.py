@@ -1,7 +1,7 @@
 import os, time, shutil
 import torch
 from transformers import DynamicCache
-from typing import Callable, Optional, Tuple, Union, Dict, Any, Iterable, List
+from typing_extensions import  Optional, Tuple, Dict, Any
 
 class oCache:	
 	def ini_ocache(self, cache_dir, stats):
